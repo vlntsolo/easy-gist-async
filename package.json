@@ -1,0 +1,30 @@
+{
+  "name": "easy-gist-async",
+  "version": "1.0.0",
+  "description": "Simple plugin to load Github Gists in async manner after the document was rendered.",
+  "source": "src/index.js",
+  "exports": "./dist/index.modern.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gists",
+    "es6",
+    "async",
+    "markup",
+    "svelte",
+    "vanillajs"
+  ],
+  "author": "Valentine Solonechnyi",
+  "license": "MIT",
+  "dependencies": {
+    "fetch-jsonp": "^1.1.x"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.1"
+  }
+}
