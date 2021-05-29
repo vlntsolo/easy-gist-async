@@ -19,7 +19,7 @@ This way, you can load your gists in async manner after the page was rendered.
 
 This also means, that you have to take care about using `easy-gist-async` function in a proper place and time by yourself (i.e. using your framework lifecycle tools or `window.onload` event. For more details see examples below)
 
-### [DEMO](https://valentine.click/blog/django-q-and-beanstalk)
+### [Demo | Blog-post example](https://valentine.click/blog/django-q-and-beanstalk)
 
 ## Getting started
 
@@ -39,7 +39,7 @@ import gistLoader from 'easy-gist-async';
 
 `easy-gist-async` expects a div element with gist data in its attributes. 
 
-Use the following format to include the full gist using its url.
+Use the following format to include **the full gist** using its url.
 
 `<div data-gist="https://gist.github.com/someuser/34261e6026oi4c303c40c6ece9961182">`
 
@@ -65,4 +65,4 @@ beforeUpdate(async() => {
 </script>
 ```
 
-## [CHANGELOG](./CHANGELOG.md)
+## [Changelog](./CHANGELOG.md)
