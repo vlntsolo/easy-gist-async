@@ -1,6 +1,6 @@
 {
   "name": "easy-gist-async",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Simple plugin to load Github Gists in async manner after the document was rendered.",
   "source": "src/index.js",
   "exports": "./dist/index.modern.js",
