@@ -1,8 +1,9 @@
 # easy-gist-async
 
+<!-- 
 ## Table of Contents
 
-<!-- - [About](#about)
+- [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Contributing](../CONTRIBUTING.md) -->
@@ -33,3 +34,8 @@ import gistLoader from 'easy-gist-async';
 ## Usage <a name = "usage"></a>
 
 ... To be completed soon!
+
+
+## [CHANGELOG](../CHANGELOG.md)
+s
+
