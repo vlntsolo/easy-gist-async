@@ -17,25 +17,52 @@ Specifically, if you'd try to import full @html to an existing DOM element, the 
 
 This way, you can load your gists in async manner after the page was rendered.
 
-This also means, that you have to take care about using `easy-gist-async` function in a proper place and time by yourself (i.e. using your framework lifecycle tools or window.onload event. For more details see examples below)
+This also means, that you have to take care about using `easy-gist-async` function in a proper place and time by yourself (i.e. using your framework lifecycle tools or `window.onload` event. For more details see examples below)
 
+### [DEMO](https://valentine.click/blog/django-q-and-beanstalk)
 
 ## Getting started
 
-1. Install package from the package manager
+1. Install the package from npm
 
 `npm i easy-gist-async`
 
+2. Import it into your project
+
 ```
+// As an ES6 Module
 import gistLoader from 'easy-gist-async';
 
 ```
 
-## Usage <a name = "usage"></a>
+3. Use markup snippets for Gists
 
-... To be completed soon!
+`easy-gist-async` expects a div element with gist data in its attributes. 
+
+Use the following format to include the full gist using its url.
+
+`<div data-gist="https://gist.github.com/someuser/34261e6026oi4c303c40c6ece9961182">`
+
+Here: `[data-gist]` - the url of your Gist *required
+
+If you want to include **just one file** from the Gist, add optional `[data-file]` attribute:
+
+`<div data-gist="https://gist.github.com/someuser/34261e6026oi4c303c40c6ece9961182" data-file="01_file.js" >`
 
 
-## [CHANGELOG](../CHANGELOG.md)
-s
+### How to load GitHub gists in a Svelte component
 
+```
+<script>
+import gistLoader from 'easy-gist-async';
+import { beforeUpdate, tick } from 'svelte';
+
+beforeUpdate(async() => {
+    await tick();
+    gistLoader();
+	});
+
+</script>
+```
+
+## [CHANGELOG](./CHANGELOG.md)
